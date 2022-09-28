@@ -226,7 +226,7 @@ body{
     height: auto;
     background-size: cover;
     background-position: center;
-    width: 40%;   
+    width: auto;   
     height: 100vh;
 
 }
