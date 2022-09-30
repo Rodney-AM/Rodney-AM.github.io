@@ -26,6 +26,29 @@
     <link rel="stylesheet" href="css/color-red.css">
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('YOUR_PUBLIC_KEY');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 <body>
     <!--contains all the div-->
@@ -449,8 +472,8 @@
                  <div class="blogs">
                     <a href="#">
                     <div class="img">
-                        <img src="images/post-two.jpg" alt="blog-two">
-                        <div class="blog-date">16 Jan,20</div>
+                        <img src="images/" alt="blog-two">
+                        <div class="blog-date"></div>
                     </div>
                     <div class="blog-text">
                         <h3></h3>
@@ -460,8 +483,8 @@
                 <div class="blogs">
                     <a href="#">
                     <div class="img">
-                        <img src="images/post-three.jpg" alt="blog-three">
-                        <div class="blog-date">30 Nov,19</div>
+                        <img src="images/" alt="blog-three">
+                        <div class="blog-date"></div>
                     </div>
                     <div class="blog-text">
                         <h3></h3>
@@ -471,8 +494,8 @@
                 <div class="blogs">
                     <a href="#">
                     <div class="img">
-                        <img src="images/post-four.jpg" alt="blog-four">
-                        <div class="blog-date">6 Jul,19</div>
+                        <img src="images/" alt="blog-four">
+                        <div class="blog-date"></div>
                     </div>
                     <div class="blog-text">
                         <h3></h3>
@@ -502,7 +525,7 @@
                     </div></a>
                 </div>        
             </div>
-               <!--copyright-section You Can Remove After Downloading-->
+               
                <div class="footer">
                 <div class="footer-text">
                     <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Rodney Akangumya
