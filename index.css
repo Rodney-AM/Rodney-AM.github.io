@@ -1370,8 +1370,8 @@ For devices with smaller width like mobile phone
 
 @media only screen and (max-width: 550px){
     .header-content{
-        height: auto;
-        width: auto;
+        height: 100vh;
+        width: 100%;
         float: left;
         display: flex;
         align-items: center;
@@ -1381,7 +1381,7 @@ For devices with smaller width like mobile phone
         font-family: raleway;
         font-weight: 500;
         letter-spacing: 2px;
-        font-size: 40px;
+        font-size: 30px;
     }
     .contact{
         display: contents;
@@ -1412,8 +1412,8 @@ For devices with smaller width like mobile phone
         display: none;
     }
     #breaker{
-        height: auto;
-        width: auto;
+        height: 50vh;
+        width: 200%;
         background-color: #c70039;
         opacity: 1;
         animation: breakeranimate 2s linear;
