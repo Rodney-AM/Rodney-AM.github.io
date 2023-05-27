@@ -1370,8 +1370,8 @@ For devices with smaller width like mobile phone
 
 @media only screen and (max-width: 550px){
     .header-content{
-        height: 100vh;
-        width: 100%;
+        height: auto;
+        width: auto;
         float: left;
         display: flex;
         align-items: center;
@@ -1412,8 +1412,8 @@ For devices with smaller width like mobile phone
         display: none;
     }
     #breaker{
-        height: 50vh;
-        width: 200%;
+        height: auto;
+        width: auto;
         background-color: #c70039;
         opacity: 1;
         animation: breakeranimate 2s linear;
