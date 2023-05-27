@@ -1384,7 +1384,7 @@ For devices with smaller width like mobile phone
         font-size: 40px;
     }
     .contact{
-        display: contents;
+        display: none;
     }
     .header-image{
         float: right;
