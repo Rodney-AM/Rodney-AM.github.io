@@ -2,6 +2,21 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');
+/* Styles for screens smaller than 600px */
+@media (max-width: 600px) {
+    /* CSS rules for smaller screens */
+  }
+  
+  /* Styles for screens between 601px and 1200px */
+  @media (min-width: 601px) and (max-width: 1200px) {
+    /* CSS rules for medium-sized screens */
+  }
+  
+  /* Styles for screens larger than 1200px */
+  @media (min-width: 1201px) {
+    /* CSS rules for larger screens */
+  }
+  
 *{
     padding: 0%;
     margin: 0%;
