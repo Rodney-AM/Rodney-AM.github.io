@@ -1409,7 +1409,7 @@ For devices with smaller width like mobile phone
         text-align: center;
     }
     #contact{
-        display: contents;
+        display: none;
     }
     #breaker{
         height: 50vh;
